@@ -42,7 +42,7 @@ contract DeceptionDerby is
         creatorOf[lobbyIds] = msg.sender;
         anteOf[lobbyIds] = ante;
         roomLimitFor[lobbyIds] = roomLimit;
-        participantsOf[lobbyId].push(msg.sender);
+        participantsOf[lobbyIds].push(msg.sender);
         emit LobbyCreated(lobbyIds, true);
     }
 
@@ -54,7 +54,7 @@ contract DeceptionDerby is
         creatorOf[lobbyIds] = msg.sender;
         anteOf[lobbyIds] = ante;
         whitelistFor[lobbyIds] = whitelist;
-        participantsOf[lobbyId].push(msg.sender);
+        participantsOf[lobbyIds].push(msg.sender);
         emit LobbyCreated(lobbyIds, false);
     }
 
